@@ -5,9 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nexus attach node index.js",
+    "start": "node nexus-telemetry.mjs node index.js",
     "nexus:original-start": "node index.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^8.20.0"
+  }
 }
